@@ -5,5 +5,6 @@
 !.gitignore
 !Dockerfile
 !docker-compose.yaml
-!app/README.md
+!README.md
 !app/.gitkeep
+!app/

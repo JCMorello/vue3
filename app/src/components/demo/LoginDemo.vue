@@ -12,7 +12,7 @@ const handleSubmit = () => {
 
 <template>
   <div class="card">
-    <h3>Login</h3>
+    <h3>Iniciar sesión</h3>
 
     <label for="username">Usuario</label>
     <input
@@ -23,7 +23,7 @@ const handleSubmit = () => {
       class="input"
     />
 
-    <label for="password" style="margin-top: 0.5rem">Password</label>
+    <label for="password" style="margin-top: 0.5rem">Contraseña</label>
     <input
       id="password"
       type="password"

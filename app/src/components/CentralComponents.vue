@@ -46,7 +46,7 @@ const goBack = () => emit('update:modelValue', 'home')
 
 <template>
   <div>
-    <h2>Central Components</h2>
+    <h2>Demo de Componentes</h2>
 
     <!-- selector -->
     <div class="card">

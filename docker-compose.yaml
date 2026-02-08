@@ -7,6 +7,13 @@ services:
       - ./app:/app
     ports:
       - "5173:5173"
-    command: npm run dev
-    stdin_open: true
-    tty: true
+      - "3000:3000" # backend
+    command: sh -c "npm install && node js/server.js & npm run dev"
+    depends_on:
+      - mailhog
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025" # Web UI
+      - "1025:1025" # SMTP

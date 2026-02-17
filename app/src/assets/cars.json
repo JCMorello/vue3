@@ -1,0 +1,194 @@
+[
+    {
+        "id": 1,
+        "name": "Toyota",
+        "logo": "toyota.png",
+        "models": [
+        { "id": 1, "name": "Corolla" },
+        { "id": 2, "name": "Camry" },
+        { "id": 3, "name": "RAV4" },
+        { "id": 4, "name": "Yaris" },
+        { "id": 5, "name": "Supra" }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "BMW",
+        "logo": "bmw.png",
+        "models": [
+        { "id": 1, "name": "Serie 1" },
+        { "id": 2, "name": "Serie 3" },
+        { "id": 3, "name": "Serie 5" },
+        { "id": 4, "name": "X3" },
+        { "id": 5, "name": "X5" }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Audi",
+        "logo": "audi.png",
+        "models": [
+        { "id": 1, "name": "A3" },
+        { "id": 2, "name": "A4" },
+        { "id": 3, "name": "A6" },
+        { "id": 4, "name": "Q5" },
+        { "id": 5, "name": "Q7" }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Mercedes",
+        "logo": "mercedes.png",
+        "models": [
+        { "id": 1, "name": "Clase A" },
+        { "id": 2, "name": "Clase C" },
+        { "id": 3, "name": "Clase E" },
+        { "id": 4, "name": "GLA" },
+        { "id": 5, "name": "GLE" }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Ford",
+        "logo": "ford.png",
+        "models": [
+        { "id": 1, "name": "Fiesta" },
+        { "id": 2, "name": "Focus" },
+        { "id": 3, "name": "Mustang" },
+        { "id": 4, "name": "Kuga" },
+        { "id": 5, "name": "Explorer" }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Volkswagen",
+        "logo": "volkswagen.png",
+        "models": [
+        { "id": 1, "name": "Golf" },
+        { "id": 2, "name": "Polo" },
+        { "id": 3, "name": "Passat" },
+        { "id": 4, "name": "Tiguan" },
+        { "id": 5, "name": "Touareg" }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Honda",
+        "logo": "honda.png",
+        "models": [
+        { "id": 1, "name": "Civic" },
+        { "id": 2, "name": "Accord" },
+        { "id": 3, "name": "CR-V" },
+        { "id": 4, "name": "HR-V" },
+        { "id": 5, "name": "Jazz" }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Hyundai",
+        "logo": "hyundai.png",
+        "models": [
+        { "id": 1, "name": "i20" },
+        { "id": 2, "name": "i30" },
+        { "id": 3, "name": "Tucson" },
+        { "id": 4, "name": "Santa Fe" },
+        { "id": 5, "name": "Kona" }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Kia",
+        "logo": "kia.png",
+        "models": [
+        { "id": 1, "name": "Rio" },
+        { "id": 2, "name": "Ceed" },
+        { "id": 3, "name": "Sportage" },
+        { "id": 4, "name": "Sorento" },
+        { "id": 5, "name": "Picanto" }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Peugeot",
+        "logo": "peugeot.png",
+        "models": [
+        { "id": 1, "name": "208" },
+        { "id": 2, "name": "308" },
+        { "id": 3, "name": "3008" },
+        { "id": 4, "name": "5008" },
+        { "id": 5, "name": "508" }
+        ]
+    },
+    {
+    "id": 11,
+    "name": "Renault",
+    "logo": "renault.png",
+    "models": [
+        { "id": 1, "name": "Clio" },
+        { "id": 2, "name": "Megane" },
+        { "id": 3, "name": "Captur" },
+        { "id": 4, "name": "Kadjar" },
+        { "id": 5, "name": "Austral" }
+    ]
+    },
+    {
+    "id": 12,
+    "name": "Nissan",
+    "logo": "nissan.png",
+    "models": [
+        { "id": 1, "name": "Micra" },
+        { "id": 2, "name": "Qashqai" },
+        { "id": 3, "name": "X-Trail" },
+        { "id": 4, "name": "Juke" },
+        { "id": 5, "name": "Leaf" }
+    ]
+    },
+    {
+    "id": 13,
+    "name": "Seat",
+    "logo": "seat.png",
+    "models": [
+        { "id": 1, "name": "Ibiza" },
+        { "id": 2, "name": "Leon" },
+        { "id": 3, "name": "Arona" },
+        { "id": 4, "name": "Ateca" },
+        { "id": 5, "name": "Tarraco" }
+    ]
+    },
+    {
+    "id": 14,
+    "name": "Skoda",
+    "logo": "skoda.png",
+    "models": [
+        { "id": 1, "name": "Fabia" },
+        { "id": 2, "name": "Octavia" },
+        { "id": 3, "name": "Superb" },
+        { "id": 4, "name": "Karoq" },
+        { "id": 5, "name": "Kodiaq" }
+    ]
+    },
+    {
+    "id": 15,
+    "name": "Mazda",
+    "logo": "mazda.png",
+    "models": [
+        { "id": 1, "name": "Mazda2" },
+        { "id": 2, "name": "Mazda3" },
+        { "id": 3, "name": "Mazda6" },
+        { "id": 4, "name": "CX-30" },
+        { "id": 5, "name": "CX-5" }
+    ]
+    },
+    {
+    "id": 16,
+    "name": "Volvo",
+    "logo": "volvo.png",
+    "models": [
+        { "id": 1, "name": "XC40" },
+        { "id": 2, "name": "XC60" },
+        { "id": 3, "name": "XC90" },
+        { "id": 4, "name": "S60" },
+        { "id": 5, "name": "S90" }
+    ]
+    }
+]

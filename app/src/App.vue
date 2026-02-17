@@ -1,55 +1,59 @@
 <script setup>
-import { ref } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
-import CentralComponents from './components/CentralComponents.vue'
-import Resultados from './components/Resultados.vue'
+import { ref, computed, onMounted, watch } from 'vue'
+import OptionSelector from './components/OptionSelector.vue'
+import carsData from './assets/cars.json'
 
-const currentView = ref('home')
-const formData = ref({})
+const brands = ref([])
+const selectedBrandId = ref(null)
+const selectedModelId = ref(null)
+
+onMounted(() => {
+    brands.value = carsData
+})
+
+const selectedBrand = computed(() =>
+    brands.value.find(b => b.id === selectedBrandId.value)
+)
+
+const selectedModel = computed(() =>
+    selectedBrand.value?.models.find(m => m.id === selectedModelId.value)
+)
+
+// Resetear modelo al cambiar marca
+watch(selectedBrandId, () => {
+    selectedModelId.value = null
+})
 </script>
 
 <template>
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <h1>Selector de Coches</h1>
+
+    <!-- Selector de Marcas -->
+    <h2>Marcas</h2>
+    <OptionSelector
+        :options="brands"
+        v-model="selectedBrandId"
+    />
+
+    <!-- Selector de Modelos -->
+    <div v-if="selectedBrand">
+        <h2>Seleccione un modelo de {{ selectedBrand.name }}</h2>
+
+        <OptionSelector
+            :options="selectedBrand.models"
+            v-model="selectedModelId"
+            center
+        />
+    </div>
+
+    <!-- Resultado -->
+    <div v-if="selectedModel">
+        <h3>
+            Has seleccionado:
+            {{ selectedBrand.name }} - {{ selectedModel.name }}
+        </h3>
+    </div>
+
   </div>
-
-  <HelloWorld
-    v-if="currentView === 'home'"
-    v-model="currentView"
-    msg="Vite + Vue"
-  />
-
-  <CentralComponents
-    v-else-if="currentView === 'central'"
-    v-model="currentView"
-    v-model:formData="formData"
-    @submit-form="formData = $event"
-  />
-
-  <Resultados
-    v-else-if="currentView === 'resultados'"
-    :form-data="formData"
-    v-model="currentView"
-  />
 </template>
-
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
